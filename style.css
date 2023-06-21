@@ -11,7 +11,8 @@ body {
     margin: 50px auto;
     border:1px solid lightgray;
     padding:50px;
-    border-radius:25px;
+    border-radius:12.5px;
+    background:rgb(240, 240, 240);
 }
 
 .top-header {
@@ -27,9 +28,24 @@ body {
     height:25px;
     padding:10px;
     border-radius:5px;
+    background:white;
 }
 
 .button a {
     text-decoration:none;
+   
     color:rgb(32, 32, 32);
+}
+
+
+table {
+    padding:25px;
+    border-radius:12.5px;
+    border:1px solid lightgray;
+    background:white;
+}
+
+td {
+    padding-top:25px;
+    padding-right:50px;
 }
