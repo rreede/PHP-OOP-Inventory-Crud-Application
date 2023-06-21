@@ -10,8 +10,6 @@
 </head>
 <body>
    
-
-
 <div class="wrapper">
 
 <div class="top-header">
@@ -40,18 +38,16 @@ $results = $query->fetchAll();
 if($query->rowCount()>0) {
 echo '<table>';
 echo '<tr>';
-echo '<td><strong>Item Name</strong></td>';
-echo '<td><strong>Item Amount</strong></td>';
-echo '<td><strong>Item Description</strong></td>';
+echo '<td><strong>Name</strong></td>';
+echo '<td><strong>Amount</strong></td>';
+echo '<td><strong>Description</strong></td>';
 echo '</td>';
-echo '<td><strong>Item Modify</strong></td>';
+echo '<td colspan=2><strong>Modify</strong></td>';
 echo '</td>';
 
     foreach($results as $result) {
         echo '<tr>';
         echo '<td>' . $result['item_name'] . '</td>';
-       
-
        
         echo '<td>' . $result['item_amount'] . '</td>';
 
@@ -61,11 +57,18 @@ echo '</td>';
 
         echo '<td>';
 
+        
+        echo "<a class='button' href='updateItem.php/?id=" . $result['id'] . "'>Update</a>";
 
+        echo '</td>';
+
+        echo '<td>';
+
+        echo "<a class='button' href='deleteItem.php/?id=" . $result['id'] . "'>Delete</a>";
 
 
         echo '</td>';
-        echo "<a href='deleteItem.php/?id=" . $result['id'] . "'>Delete</a>";
+        
         echo '</tr>';
     }
 

@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding:0;
+}
+
 body {
     font-family:arial;
     color:rgb(39, 39, 39);
@@ -6,13 +11,14 @@ body {
 }
 
 
+
 .wrapper {
-    width:640px;
+    width:960px;
     margin: 50px auto;
     border:1px solid lightgray;
-    padding:50px;
+    padding:25px 50px;
     border-radius:12.5px;
-    background:rgb(240, 240, 240);
+    background:rgb(244, 244, 244);
 }
 
 .top-header {
@@ -20,6 +26,7 @@ body {
     justify-content:space-between;
     align-items:center;
     height:100px;
+    width:100%;
 }
 
 .button {
@@ -33,7 +40,7 @@ body {
 
 .button a {
     text-decoration:none;
-   
+    text-decoration:none;
     color:rgb(32, 32, 32);
 }
 
@@ -41,11 +48,47 @@ body {
 table {
     padding:25px;
     border-radius:12.5px;
-    border:1px solid lightgray;
+    border:1px solid rgb(223, 223, 223);
     background:white;
+    width:100%;
 }
 
 td {
     padding-top:25px;
     padding-right:50px;
+    text-align:center;
 }
+
+a:link{
+    text-decoration: none!important;
+    color:rgb(66, 66, 66);
+  }
+
+  a:visited{
+    text-decoration: none!important;
+    color:rgb(66, 66, 66);
+  }
+
+  a:hover{
+    text-decoration: none!important;
+    color:rgb(20, 189, 195);
+  }
+
+  label {
+    display:inline-block;
+    width:135px;
+  }
+
+  .update {
+    padding:6.25px 25px;
+
+
+  }
+
+  input[type=text] {
+    height:25px;
+  }
+
+  input[type=number] {
+    height:25px;
+  }

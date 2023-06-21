@@ -2,6 +2,9 @@
 
 include("config.php");
 
+
+if(isset($_GET['id'])) {
+
 $sql = "DELETE FROM `items` WHERE `id`=:id";
 
 $query = $dbh -> prepare($sql);
@@ -14,10 +17,11 @@ $query -> execute();
 
 if($query -> rowCount() > 0)
 {
-$count = $query -> rowCount();
-echo $count . " rows were affected.";
+    header('Location:../index.php');
 }
 else
 {
 echo "No affected rows.";
+}
+
 }

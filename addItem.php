@@ -18,19 +18,18 @@
 
 <h1> ➕ Add Item </h1>
 
-<span class="button"><a href="Index.php">🔙 Homepage</a></span>
+<span class="button"><a href="index.php">🔙 Homepage</a></span>
 
 </div>
 
 <form method='post' action="<?php echo $_SERVER['PHP_SELF']; ?>">
 
-        Item name:  <input type="text" name='itemName'><br>
+<label for="">Item name:</label><input type="text" name='itemName'><br><br>
 
-        Item amount:  <input type="number" name='itemAmount'><br>
-        <br>
-        Item description:  <input type="text" name='itemDescription'>
-
-    <input type='submit'>
+<label for="">Item amount:</label><input type="number" name='itemAmount'><br><br>
+        <label for="">Item description:</label><input type="text" name='itemDescription'>
+        <br><br>
+    <input type='submit' class='update' value='Add Item'>
     </form>
 <?php
 
